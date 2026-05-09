@@ -2,7 +2,128 @@
 <section class="category">
 <link rel="stylesheet" href="style.css">
 
+
 <h1>
+  <!-- PREMIUM OFFER BANNER -->
+
+<div class="offer-banner">
+
+<h1>🔥 LIMITED 10 DAYS OFFER 🔥</h1>
+
+<p>
+Get Best Wholesale Prices On All Supplements 💪
+</p>
+
+<div id="offer-timer" class="timer">
+Loading Offer Timer...
+</div>
+
+</div>
+
+<style>
+
+.offer-banner{
+background:linear-gradient(135deg,#ff0000,#ff7300);
+color:white;
+padding:22px;
+text-align:center;
+border-radius:18px;
+margin:20px;
+box-shadow:0 0 25px rgba(255,0,0,0.5);
+animation:float 2s ease-in-out infinite;
+}
+
+.offer-banner h1{
+font-size:34px;
+margin-bottom:10px;
+text-shadow:0 0 10px rgba(255,255,255,0.6);
+}
+
+.offer-banner p{
+font-size:18px;
+font-weight:bold;
+margin-bottom:18px;
+}
+
+.timer{
+display:inline-block;
+background:black;
+color:#00ff66;
+padding:14px 25px;
+border-radius:14px;
+font-size:24px;
+font-weight:bold;
+box-shadow:0 0 18px rgba(0,255,100,0.7);
+animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+50%{
+transform:scale(1.05);
+}
+}
+
+@keyframes float{
+0%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(-6px);
+}
+100%{
+transform:translateY(0px);
+}
+}
+
+</style>
+
+<script>
+
+// 10 DAYS LIVE COUNTDOWN
+
+let offerEnd = new Date().getTime() + (10 * 24 * 60 * 60 * 1000);
+
+let timer = setInterval(function(){
+
+let now = new Date().getTime();
+
+let distance = offerEnd - now;
+
+let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+let hours = Math.floor(
+(distance % (1000 * 60 * 60 * 24))
+/ (1000 * 60 * 60)
+);
+
+let minutes = Math.floor(
+(distance % (1000 * 60 * 60))
+/ (1000 * 60)
+);
+
+let seconds = Math.floor(
+(distance % (1000 * 60))
+/ 1000
+);
+
+document.getElementById("offer-timer").innerHTML =
+"⏳ " +
+days + " Days : " +
+hours + " Hours : " +
+minutes + " Min : " +
+seconds + " Sec";
+
+if(distance < 0){
+
+clearInterval(timer);
+
+document.getElementById("offer-timer").innerHTML =
+"❌ OFFER EXPIRED";
+}
+
+},1000);
+
+</script>
 ALL Gym Supplements • Whey Protein • Creatine • Mass Gainers • Accessories ⚡
 Best Price Guranteed • Premium Quality Supplements
 </h1>
