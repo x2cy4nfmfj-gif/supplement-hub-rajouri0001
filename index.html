@@ -1,305 +1,251 @@
 <!-- ALL PRODUCTS -->
 <section class="category">
-
 <link rel="stylesheet" href="style.css">
-
-<!-- OFFER BANNER -->
-
-<div class="offer-banner">
-
-<div class="offer-content">
-
-<h1>🔥 MEGA 10 DAYS SALE 🔥</h1>
-
-<p>
-Premium Gym Supplements At Wholesale Prices 💪
-</p>
-
-<div id="countdown" class="countdown">
-Loading Offer Timer...
-</div>
-
-</div>
-</div>
-
-<style>
-
-body{
-background:#f5f5f5;
-font-family:Arial,sans-serif;
-margin:0;
-padding:0;
-}
-
-/* HEADING */
-
-.category h1{
-text-align:center;
-font-size:32px;
-margin-top:20px;
-padding:10px;
-}
-
-/* OFFER BANNER */
-
-.offer-banner{
-background:linear-gradient(135deg,#ff0000,#ff7300);
-padding:25px;
-margin:20px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 0 25px rgba(255,0,0,0.6);
-animation:float 2s ease-in-out infinite;
-}
-
-.offer-content h1{
-color:white;
-font-size:32px;
-margin-bottom:10px;
-text-shadow:0 0 10px rgba(255,255,255,0.7);
-}
-
-.offer-content p{
-color:white;
-font-size:18px;
-font-weight:bold;
-margin-bottom:15px;
-}
-
-.countdown{
-display:inline-block;
-background:black;
-color:#00ff66;
-padding:14px 28px;
-border-radius:15px;
-font-size:24px;
-font-weight:bold;
-box-shadow:0 0 18px rgba(0,255,100,0.8);
-animation:pulse 1s infinite;
-}
-
-/* PRODUCT GRID */
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-padding:25px;
-justify-items:center;
-}
-
-/* CARD */
-
-.card{
-background:white;
-padding:18px;
-border-radius:18px;
-width:240px;
-text-align:center;
-box-shadow:0 0 15px rgba(0,0,0,0.15);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 25px rgba(255,115,0,0.4);
-}
-
-.card img{
-width:180px;
-height:180px;
-object-fit:contain;
-margin-bottom:12px;
-}
-
-.card h3{
-font-size:18px;
-margin:10px 0;
-min-height:50px;
-}
-
-.card p{
-font-size:24px;
-font-weight:bold;
-color:#ff3300;
-margin-bottom:15px;
-}
-
-.card button{
-background:#25D366;
-color:white;
-border:none;
-padding:12px 18px;
-border-radius:10px;
-font-size:16px;
-font-weight:bold;
-cursor:pointer;
-transition:0.3s;
-}
-
-.card button:hover{
-background:#1ebe5d;
-transform:scale(1.05);
-}
-
-/* ANIMATIONS */
-
-@keyframes pulse{
-50%{
-transform:scale(1.05);
-}
-}
-
-@keyframes float{
-0%{
-transform:translateY(0px);
-}
-50%{
-transform:translateY(-8px);
-}
-100%{
-transform:translateY(0px);
-}
-}
-
-</style>
-
-<script>
-
-// LIVE 10 DAYS COUNTDOWN
-
-let countdownDate = new Date().getTime() + (10 * 24 * 60 * 60 * 1000);
-
-let x = setInterval(function(){
-
-let now = new Date().getTime();
-
-let distance = countdownDate - now;
-
-let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-
-let hours = Math.floor((distance % (1000 * 60 * 60 * 24))
-/ (1000 * 60 * 60));
-
-let minutes = Math.floor((distance % (1000 * 60 * 60))
-/ (1000 * 60));
-
-let seconds = Math.floor((distance % (1000 * 60))
-/ 1000);
-
-document.getElementById("countdown").innerHTML =
-"⏳ " + days + "D : "
-+ hours + "H : "
-+ minutes + "M : "
-+ seconds + "S ";
-
-if(distance < 0){
-
-clearInterval(x);
-
-document.getElementById("countdown").innerHTML =
-"❌ OFFER EXPIRED";
-
-}
-
-},1000);
-
-</script>
 
 <h1>
 ALL Gym Supplements • Whey Protein • Creatine • Mass Gainers • Accessories ⚡
+Best Price Guranteed • Premium Quality Supplements
 </h1>
 
-<div class="products">
+<div class="products" style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
+justify-items:center;
+padding:20px;
+">
 
-<!-- PRODUCT -->
-
+<!-- OATS -->
 <div class="card">
-<img src="Screenshot_2026-05-05_191926-removebg-preview.png">
-<h3>Pintola Oats</h3>
-<p>₹449</p>
+  <img src="Screenshot_2026-05-05_191926-removebg-preview.png">
+  <h3>Pintola Oats</h3>
+  <p>₹449</p>
 
-<a class="whatsapp-btn" data-product="Pintola Oats">
-<button>Order On WhatsApp</button>
-</a>
-</div>
-
-<div class="card">
-<img src="Screenshot_2026-05-06_222125-removebg-preview.png">
-<h3>MuscleBlaze Whey 1KG</h3>
-<p>₹2499</p>
-
-<a class="whatsapp-btn" data-product="MuscleBlaze Whey">
-<button>Order On WhatsApp</button>
-</a>
+  <a class="whatsapp-btn" data-product="Pintola Oats">
+    <button>Order On WhatsApp</button>
+  </a>
 </div>
 
 <div class="card">
-<img src="Screenshot_2026-05-06_223057-removebg-preview (1).png">
-<h3>X NANO LEAN MASS</h3>
-<p>₹2999</p>
+  <img src="Screenshot_2026-05-05_192017-removebg-preview (1).png">
+  <h3>Pintola Muesli</h3>
+  <p>₹479</p>
 
-<a class="whatsapp-btn" data-product="X NANO LEAN MASS">
-<button>Order On WhatsApp</button>
-</a>
+  <a class="whatsapp-btn" data-product="Pintola Muesli">
+    <button>Order On WhatsApp</button>
+  </a>
+</div>
+
+<!-- PEANUT BUTTER -->
+<div class="card">
+  <img src="Screenshot_2026-05-06_221649-removebg-preview.png">
+  <h3>High Protein Dark Chocolate Peanut Butter 1kg</h3>
+  <p>₹479</p>
+
+  <a class="whatsapp-btn" data-product="High Protein Dark Chocolate Peanut Butter 1kg">
+    <button>Order On WhatsApp</button>
+  </a>
 </div>
 
 <div class="card">
-<img src="Screenshot_2026-05-06_225845-removebg-preview.png">
-<h3>MuscleBlaze Creatine</h3>
-<p>₹899</p>
+  <img src="Screenshot_2026-05-06_221854-removebg-preview.png">
+  <h3>Dark Chocolate Performance Peanut Butter 1kg</h3>
+  <p>₹459</p>
 
-<a class="whatsapp-btn" data-product="MuscleBlaze Creatine">
-<button>Order On WhatsApp</button>
-</a>
+  <a class="whatsapp-btn" data-product="Dark Chocolate Performance Peanut Butter 1kg">
+    <button>Order On WhatsApp</button>
+  </a>
+</div>
+
+<!-- WHEY -->
+<div class="card">
+  <img src="Screenshot_2026-05-06_222125-removebg-preview.png">
+  <h3>MuscleBlaze Biozyme Performance Whey 1KG</h3>
+  <p>₹2499</p>
+
+  <a class="whatsapp-btn" data-product="MuscleBlaze Biozyme Performance Whey 1KG">
+    <button>Order On WhatsApp</button>
+  </a>
 </div>
 
 <div class="card">
-<img src="hkvitals.png">
-<h3>HK Vitals Creatine</h3>
-<p>₹699</p>
+  <img src="Screenshot_2026-05-06_222347-removebg-preview.png">
+  <h3>FUELONE Whey Protein 1KG</h3>
+  <p>₹1899</p>
 
-<a class="whatsapp-btn" data-product="HK Vitals Creatine">
-<button>Order On WhatsApp</button>
-</a>
+  <a class="whatsapp-btn" data-product="FUELONE Whey Protein 1KG">
+    <button>Order On WhatsApp</button>
+  </a>
 </div>
 
 <div class="card">
-<img src="lcarnitine.png">
-<h3>L-Carnitine</h3>
-<p>₹1499</p>
+  <img src="Screenshot_2026-05-06_222814-removebg-preview (1).png">
+  <h3>ON Gold Standard Whey 2lbs</h3>
+  <p>₹3499</p>
 
-<a class="whatsapp-btn" data-product="L-Carnitine">
-<button>Order On WhatsApp</button>
-</a>
+  <a class="whatsapp-btn" data-product="ON Gold Standard Whey 2lbs">
+    <button>Order On WhatsApp</button>
+  </a>
+</div>
+
+<!-- MASS GAINER -->
+<div class="card">
+  <img src="Screenshot_2026-05-06_223057-removebg-preview (1).png">
+  <h3>X NANO LEAN MASS 6lbs</h3>
+  <p>₹3499</p>
+
+  <a class="whatsapp-btn" data-product="X NANO LEAN MASS">
+    <button>Order On WhatsApp</button>
+  </a>
 </div>
 
 <div class="card">
-<img src="Screenshot_2026-05-07_104307-removebg-preview.png">
-<h3>Deadlift Strap</h3>
-<p>₹299</p>
+  <img src="Screenshot_2026-05-06_223310-removebg-preview.png">
+  <h3>X NANO ANABOLIC MUSCLE 6-lbs</h3>
+  <p>₹3575</p>
 
-<a class="whatsapp-btn" data-product="Deadlift Strap">
-<button>Order On WhatsApp</button>
-</a>
+  <a class="whatsapp-btn" data-product="X NANO ANABOLIC MUSCLE">
+    <button>Order On WhatsApp</button>
+  </a>
+</div>
+
+<!-- PRE WORKOUT -->
+<div class="card">
+  <img src="Screenshot_2026-05-06_223534-removebg-preview.png">
+  <h3>Rdx Prework Out 300Gm</h3>
+  <p>₹1249</p>
+
+  <a class="whatsapp-btn" data-product="Rdx Prework Out 300Gm">
+    <button>Order On WhatsApp</button>
+  </a>
 </div>
 
 <div class="card">
-<img src="Screenshot_2026-05-07_105003-removebg-preview (1).png">
-<h3>Gym Bag</h3>
-<p>₹349</p>
+  <img src="Screenshot_2026-05-06_225428-removebg-preview.png">
+  <h3>MuscleBlaze Pre Workout WrathX 340gm</h3>
+  <p>₹1199</p>
 
-<a class="whatsapp-btn" data-product="Gym Bag">
-<button>Order On WhatsApp</button>
-</a>
+  <a class="whatsapp-btn" data-product="MuscleBlaze Pre Workout WrathX">
+    <button>Order On WhatsApp</button>
+  </a>
+</div>
+
+<div class="card">
+  <img src="Screenshot_2026-05-06_225703-removebg-preview.png">
+  <h3>X NANO PUMP PREWORKOUT</h3>
+  <p>₹1149</p>
+
+  <a class="whatsapp-btn" data-product="X NANO PUMP PREWORKOUT">
+    <button>Order On WhatsApp</button>
+  </a>
+</div>
+
+<!-- CREATINE -->
+<div class="card">
+  <img src="Screenshot_2026-05-06_225845-removebg-preview.png">
+  <h3>MuscleBlaze Creatine Monohydrate 320g</h3>
+  <p>₹899</p>
+
+  <a class="whatsapp-btn" data-product="MuscleBlaze Creatine Monohydrate 320gm">
+    <button>Order On WhatsApp</button>
+  </a>
+</div>
+
+<div class="card">
+  <img src="Screenshot_2026-05-07_210138-removebg-preview.png">
+  <h3>Wellcore Creatine Monohydrate Flavoured 122g</h3>
+  <p>₹479</p>
+
+  <a class="whatsapp-btn" data-product="Wellcore Creatine Monohydrate 122g">
+    <button>Order On WhatsApp</button>
+  </a>
+</div>
+
+<div class="card">
+  <img src="Screenshot_2026-05-07_211353-removebg-preview.png">
+  <h3>MuscleBlaze CreAMP Flavoured 120g</h3>
+  <p>₹450</p>
+
+  <a class="whatsapp-btn" data-product="MuscleBlaze CreAMP Flavoured 120g">
+    <button>Order On WhatsApp</button>
+  </a>
+</div>
+
+<div class="card">
+  <img src="Screenshot_2026-05-07_210231-removebg-preview.png">
+  <h3>Wellcore Creatine Monohydrate 307g</h3>
+  <p>₹899</p>
+
+  <a class="whatsapp-btn" data-product="Wellcore Creatine Monohydrate 307g">
+    <button>Order On WhatsApp</button>
+  </a>
+</div>
+
+<div class="card">
+  <img src="Screenshot_2026-05-06_230018-removebg-preview.png">
+  <h3>MUSCLE TECH PLATINUM CREATINE unflavoured 250gm</h3>
+  <p>₹799</p>
+
+  <a class="whatsapp-btn" data-product="MUSCLE TECH PLATINUM CREATINE unflavoured 250gm">
+    <button>Order On WhatsApp</button>
+  </a>
+</div>
+
+<div class="card">
+  <img src="Screenshot_2026-05-06_230302-removebg-preview.png">
+  <h3>ON Micronised Creatine 83-serving  unflavoured 250gm</h3>
+  <p>₹799</p>
+
+  <a class="whatsapp-btn" data-product="ON Micronised Creatine 83 serving ">
+    <button>Order On WhatsApp</button>
+  </a>
+</div>
+
+<!-- ACCESSORIES -->
+<div class="card">
+  <img src="Screenshot_2026-05-07_104307-removebg-preview.png">
+  <h3>DEADLIFT STRAP</h3>
+  <p>₹299</p>
+
+  <a class="whatsapp-btn" data-product="DEADLIFT STRAP">
+    <button>Order On WhatsApp</button>
+  </a>
+</div>
+
+<div class="card">
+  <img src="Screenshot_2026-05-07_104404-removebg-preview (1).png">
+  <h3>Powerlifting wrist </h3>
+  <p>₹299</p>
+
+  <a class="whatsapp-btn" data-product="WRIST SUPPORT">
+    <button>Order On WhatsApp</button>
+  </a>
+</div>
+
+<div class="card">
+  <img src="Screenshot_2026-05-07_104851-removebg-preview (2).png">
+  <h3>P-SHAKER BOTTLE</h3>
+  <p>₹179</p>
+
+  <a class="whatsapp-btn" data-product="P-SHAKER BOTTLE">
+    <button>Order On WhatsApp</button>
+  </a>
+</div>
+
+<div class="card">
+  <img src="Screenshot_2026-05-07_105003-removebg-preview (1).png">
+  <h3>GYM BAG</h3>
+  <p>₹349</p>
+
+  <a class="whatsapp-btn" data-product="GYM BAG">
+    <button>Order On WhatsApp</button>
+  </a>
 </div>
 
 </div>
-
 </section>
 
 <!-- WHATSAPP SCRIPT -->
-
 <script>
 
 document.querySelectorAll(".whatsapp-btn").forEach(button => {
