@@ -1,0 +1,314 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* BODY */
+body{
+    margin:0;
+    padding:0;
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    radial-gradient(circle at top left,#827b7b,#6e6565 60%);
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+}
+
+/* MAIN CONTAINER */
+.container{
+    width:100%;
+    max-width:1600px;
+
+    margin:auto;
+
+    padding:30px;
+}
+
+/* PREMIUM SEARCH BAR */
+.search-box{
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+
+    margin-bottom:50px;
+}
+
+.search-box input{
+    width:70%;
+    max-width:800px;
+
+    padding:18px 25px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:60px;
+
+    font-size:17px;
+
+    color:white;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+    0 0 20px rgba(0,0,0,0.35);
+
+    transition:0.4s ease;
+}
+
+/* SEARCH HOVER */
+.search-box input:focus{
+    box-shadow:
+    0 0 20px rgba(0,255,255,0.35),
+    0 0 40px rgba(255,0,200,0.15);
+
+    transform:scale(1.02);
+}
+
+/* PLACEHOLDER */
+.search-box input::placeholder{
+    color:#cfcfcf;
+}
+
+/* PRODUCTS SECTION */
+.products{
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    flex-wrap:wrap;
+
+    gap:40px;
+
+    padding:20px;
+}
+
+/* PREMIUM CARD */
+.card{
+    width:320px;
+
+    background:
+    rgba(255,255,255,0.07);
+
+    border:
+    1px solid rgba(133, 125, 125, 0.08);
+
+    border-radius:30px;
+
+    padding:30px 25px;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    backdrop-filter:blur(18px);
+
+    transition:0.5s ease;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,0.5);
+}
+
+/* GLOW EFFECT */
+.card::before{
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+    height:250px;
+
+    background:
+    radial-gradient(
+    rgba(0,255,255,0.18),
+    transparent);
+
+    top:-120px;
+    right:-120px;
+}
+
+/* SECOND GLOW */
+.card::after{
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+    height:220px;
+
+    background:
+    radial-gradient(
+    rgba(255,0,200,0.15),
+    transparent);
+
+    bottom:-120px;
+    left:-120px;
+}
+
+/* CARD HOVER */
+.card:hover{
+    transform:
+    translateY(-12px)
+    scale(1.03);
+
+    box-shadow:
+    0 0 25px rgba(0,255,255,0.2),
+    0 0 60px rgba(255,0,200,0.15);
+}
+
+/* PRODUCT IMAGE */
+.card img{
+    width:100%;
+    height:260px;
+
+    object-fit:contain;
+
+    transition:0.5s ease;
+
+    z-index:2;
+    position:relative;
+}
+
+/* IMAGE HOVER */
+.card:hover img{
+    transform:
+    scale(1.08)
+    rotate(-2deg);
+}
+
+/* PRODUCT TITLE */
+.card h2{
+    color:white;
+
+    font-size:28px;
+
+    margin-top:20px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    position:relative;
+    z-index:2;
+}
+
+/* DESCRIPTION */
+.card p{
+    color:#d0d0d0;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    margin-top:10px;
+
+    position:relative;
+    z-index:2;
+}
+
+/* PREMIUM BUTTON */
+.card button{
+    margin-top:22px;
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:60px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:white;
+
+    cursor:pointer;
+
+    background:
+    linear-gradient(
+    90deg,
+    #00f5ff,
+    #7a5cff,
+    #ff00c8);
+
+    transition:0.4s ease;
+
+    position:relative;
+
+    z-index:2;
+
+    box-shadow:
+    0 0 20px rgba(122,92,255,0.35);
+}
+
+/* BUTTON HOVER */
+.card button:hover{
+    transform:
+    scale(1.05);
+
+    letter-spacing:1px;
+
+    box-shadow:
+    0 0 25px rgba(0,255,255,0.5),
+    0 0 50px rgba(255,0,200,0.35);
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+
+    .container{
+        padding:20px;
+    }
+
+    .search-box input{
+        width:95%;
+    }
+
+    .products{
+        gap:30px;
+    }
+
+    .card{
+        width:90%;
+    }
+}
+/* PREMIUM PRICE */
+.card p{
+
+    font-size:26px;
+
+    font-weight:800;
+
+    background:
+    linear-gradient(
+    90deg,
+    #111212,
+    #171617,
+    #1a191a);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    margin-top:12px;
+
+    letter-spacing:1px;
+}
