@@ -9,7 +9,7 @@ body{
     font-family:'Poppins',sans-serif;
 
     background:
-    radial-gradient(circle at top left,#827b7b,#6e6565 60%);
+    radial-gradient(circle at top left,#eae7e7,#d6cfcf 60%);
 
     min-height:100vh;
 
@@ -194,7 +194,7 @@ body{
 
 /* PRODUCT TITLE */
 .card h2{
-    color:white;
+    color:rgb(16, 1, 1);
 
     font-size:28px;
 
@@ -245,9 +245,9 @@ body{
     background:
     linear-gradient(
     90deg,
-    #00f5ff,
-    #7a5cff,
-    #ff00c8);
+    #05f445,
+    #02ec68,
+    #022610);
 
     transition:0.4s ease;
 
